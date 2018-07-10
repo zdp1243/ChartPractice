@@ -10,23 +10,124 @@
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
-    <!--FusionChartsXT Library-->
-  <script type="text/javascript" src="fusioncharts/js/fusioncharts.js"></script>
-  <script type="text/javascript" src="fusioncharts/js/themes/fusioncharts.theme.fint.js"></script>
+   
   <!--FusionCharts-->
-  <script type="text/javascript" src="https://unpkg.com/[[email protected]](https://www.fusioncharts.com/cdn-cgi/l/email-protection)/dist/JSXTransformer.js"></script>
+
+<script type="text/javascript" src="https://unpkg.com/[[email protected]](https://www.fusioncharts.com/cdn-cgi/l/email-protection)/dist/JSXTransformer.js"></script>
 <script type="text/javascript" src="https://unpkg.com/[[email protected]](https://www.fusioncharts.com/cdn-cgi/l/email-protection)/dist/react.min.js"></script>
 <script type="text/javascript" src="https://unpkg.com/[[email protected]](https://www.fusioncharts.com/cdn-cgi/l/email-protection)/dist/react-dom.min.js"></script>
 <script type="text/javascript" src="https://unpkg.com/fusioncharts/fusioncharts.js"></script>
 <script type="text/javascript" src="https://unpkg.com/react-fusioncharts/dist/react-fusioncharts.js"></script>
-   
+ 
+ <!--FusionChartsXT Library-->
+ <script type="text/javascript" src="fusioncharts/js/fusioncharts.js"></script>
+ <script type="text/javascript" src="fusioncharts/js/themes/fusioncharts.theme.fint.js"></script>
+
     <title>iSubscribe Charts</title>
+   
+   <script type="text/javascript">
+     FusionCharts.ready(function() {
+    var columnChart = new FusionCharts({
+        "type": "column3d",
+        "renderAt": "chartContainer",
+        "width": "500",
+        "height": "300",
+        "dataFormat": "json",
+        "dataSource": {
+            "chart": {
+                "caption": "This chart is from the instance",
+                "subCaption": "Subscription Costs",
+                "xAxisName": "Subscriptions",
+                "yAxisName": "Cost (USD)/Month",
+                "theme": "fint"
+            },
+            "data": [{
+                    "label": "Amazon Prime",
+                    "value": "9.92"
+                },
+                {
+                    "label": "Hulu",
+                    "value": "8.00"
+                },
+                {
+                    "label": "Gold Box",
+                    "value": "85.00"
+                },
+                {
+                    "label": "Walt Life",
+                    "value": "39.00"
+                },
+                {
+                    "label": "Nook Magazine",
+                    "value": "25.00"
+                }
+            ]
+        }
+    });
+
+    columnChart.render();
+    
+});
+
+     FusionCharts.ready(function() {
+    var pieChart = new FusionCharts({
+        "type": "pie3d",
+        "renderAt": "piechartContainer",
+        "width": "500",
+        "height": "300",
+        "dataFormat": "json",
+        "dataSource": {
+            "chart": {
+                "caption": "This chart is from the instance",
+                "subCaption": "Harry's SuperMart",
+                "xAxisName": "Month",
+                "yAxisName": "Revenues (In USD)",
+                "theme": "fint"
+            },
+            "data": [{
+                    "label": "Music",
+                    "value": "4"
+                },
+                {
+                    "label": "Video",
+                    "value": "8"
+                },
+                {
+                    "label": "Fashion",
+                    "value": "5"
+                },
+                {
+                    "label": "Children",
+                    "value": "2"
+                },
+                {
+                    "label": "Book",
+                    "value": "3"
+                }
+            ]
+        }
+    });
+
+    pieChart.render();
+    
+})
+  
+    </script>
+
+    <script type="text/javascript">
+      FusionCharts['debugger'].outputTo(function (message) {
+          console.log(message);
+      });
+      FusionCharts['debugger'].enable(true);
+      </script>
+    
   </head>
   <body>
     <noscript>
       You need to enable JavaScript to run this app.
     </noscript>
+
     <div id="root"></div>
-    
+  
   </body>
 </html>

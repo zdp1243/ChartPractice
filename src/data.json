@@ -1,6 +1,6 @@
 {
     "chart": {
-        "caption": "Monthly revenue for last year",
+        "caption": "Data from datajson",
         "subCaption": "Harry's SuperMart",
         "xAxisName": "Month",
         "yAxisName": "Revenues (In USD)",
