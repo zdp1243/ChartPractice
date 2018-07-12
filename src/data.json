@@ -1,60 +1,65 @@
+  
 {
     "chart": {
-        "caption": "Data from datajson",
-        "subCaption": "Harry's SuperMart",
-        "xAxisName": "Month",
-        "yAxisName": "Revenues (In USD)",
+        "caption": "This chart is from the json",
+        "subCaption": "Subscription Costs",
+        "xAxisName": "Subscriptions",
+        "yAxisName": "Cost (USD)/Month",
         "numberPrefix": "$",
         "theme": "fint"
     },
-    "data": [
-        {
-            "label": "Jan",
-            "value": "420000"
+    "data": [{
+            "label": "Amazon Prime",
+            "value": "9.92"
         },
         {
-            "label": "Feb",
-            "value": "810000"
+            "label": "Hulu",
+            "value": "8.00"
         },
         {
-            "label": "Mar",
-            "value": "720000"
+            "label": "Gold Box",
+            "value": "85.00"
         },
         {
-            "label": "Apr",
-            "value": "550000"
+            "label": "Walt Life",
+            "value": "39.00"
         },
         {
-            "label": "May",
-            "value": "910000"
-        },
-        {
-            "label": "Jun",
-            "value": "510000"
-        },
-        {
-            "label": "Jul",
-            "value": "680000"
-        },
-        {
-            "label": "Aug",
-            "value": "620000"
-        },
-        {
-            "label": "Sep",
-            "value": "610000"
-        },
-        {
-            "label": "Oct",
-            "value": "490000"
-        },
-        {
-            "label": "Nov",
-            "value": "900000"
-        },
-        {
-            "label": "Dec",
-            "value": "730000"
+            "label": "Nook Magazine",
+            "value": "25.00"
         }
     ]
 }
+
+
+//     "chart": {
+//         "caption": "This chart is from the json",
+//         "subCaption": "Harry's SuperMart",
+//         "xAxisName": "Month",
+//         "yAxisName": "Revenues (In USD)",
+//         "theme": "fint"
+//     },
+//     "data": [{
+//             "label": "Music",
+//             "value": "4"
+//         },
+//         {
+//             "label": "Video",
+//             "value": "8"
+//         },
+//         {
+//             "label": "Fashion",
+//             "value": "5"
+//         },
+//         {
+//             "label": "Children",
+//             "value": "2"
+//         },
+//         {
+//             "label": "Book",
+//             "value": "3"
+//         }
+//     ]
+// }
+// });
+

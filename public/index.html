@@ -36,14 +36,19 @@
         "dataSource": {
             "chart": {
                 "caption": "This chart is from the instance",
-                "subCaption": "Subscription Costs",
+                "subCaption": "Nadia's Subscription Costs",
                 "xAxisName": "Subscriptions",
-                "yAxisName": "Cost (USD)/Month",
-                "theme": "fint"
+                "yAxisName": "Price (USD)/Month",
+                "theme": "fint",
+                "baseFont": "Verdana",
+        "baseFontSize": "13",
+        "baseFontColor": "#0066cc",
+    
             },
             "data": [{
                     "label": "Amazon Prime",
-                    "value": "9.92"
+                    "value": "9.92",
+    
                 },
                 {
                     "label": "Hulu",
@@ -79,10 +84,12 @@
         "dataSource": {
             "chart": {
                 "caption": "This chart is from the instance",
-                "subCaption": "Harry's SuperMart",
-                "xAxisName": "Month",
-                "yAxisName": "Revenues (In USD)",
-                "theme": "fint"
+                "subCaption": "Nadia's Subscription Usage by Category",
+                "theme": "fint",
+                "baseFont": "Verdana",
+        "baseFontSize": "13",
+        "baseFontColor": "#0066cc",
+        "decimals": "2",
             },
             "data": [{
                     "label": "Music",
@@ -110,8 +117,29 @@
 
     pieChart.render();
     
-})
-  
+});
+
+// FusionCharts.ready(function() {
+//     var piejsonChart = new FusionCharts({
+//         "type": "pie3d",
+//         "renderAt": "piechartContainer",
+//         "width": "500",
+//         "height": "300",
+//         "dataFormat": "json",
+//         "dataSource": {
+//             "chart": {
+//                 "caption": "This chart is from the instance",
+//                 "subCaption": "Harry's SuperMart",
+//                 "xAxisName": "Month",
+//                 "yAxisName": "Revenues (In USD)",
+//                 "theme": "fint"
+//             },
+
+//    });
+
+//     piejsonChart.render();
+    
+// });
     </script>
 
     <script type="text/javascript">
